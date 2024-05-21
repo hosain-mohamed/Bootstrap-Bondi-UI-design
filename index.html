@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bondi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bondi</title>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/imgs/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active p-2 p-lg-3" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="">Contact</a>
+            </li>
+          </ul>
+          <div class="search d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass ms-3 me-3"></i>
+          </div>
+          <a class="btn main-button rounded-pill" href="">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- LANDING -->
+    <div class="landing d-flex justify-content-center align-items-center">
+      <div class="text-center text-light">
+        <h1>Taste the Creativity</h1>
+        <p class="fs-6 text-white-50 mb-5">
+          We make awesome graphic and web design
+        </p>
+        <a class="btn main-button rounded-pill" href="">Get Started</a>
+      </div>
+    </div>
+    <!-- Features -->
+    <div class="features text-center pt-5 pb-5">
+      <div class="container">
+        <!-- Feature title -->
+        <div class="main-title mt-5 mb-5 position-relative">
+          <img class="mb-4" src="imgs/title.png" alt="" />
+          <h2>We are Good at</h2>
+          <p class="text-uppercase text-black-50">Some of these stuff under</p>
+        </div>
+        <!-- Feature Cards -->
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <div class="features-icons position-relative">
+                <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
+                <i
+                  class="fa-solid fa-pencil fa-4x position-absolute bottom-0 icon"
+                ></i>
+              </div>
+              <h4 class="mt-4 mb-4 text-uppercase">GRAPHIC DESIGN</h4>
+              <p class="text-black-50 lh-lg">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <div class="features-icons position-relative">
+                <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
+                <i
+                  class="fa-solid fa-tv fa-4x position-absolute bottom-0 icon"
+                ></i>
+              </div>
+              <h4 class="mt-4 mb-4 text-uppercase">Web Development</h4>
+              <p class="text-black-50 lh-lg">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <div class="features-icons position-relative">
+                <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
+                <i
+                  class="fa-solid fa-plug fa-4x position-absolute bottom-0 icon"
+                ></i>
+              </div>
+              <h4 class="mt-4 mb-4 text-uppercase">Maintaince</h4>
+              <p class="text-black-50 lh-lg">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects -->
+    <div class="projects text-center pt-5 pb-5">
+      <div class="container">
+        <!-- Titlte -->
+        <div class="main-title mt-5 mb-5 position-relative">
+          <img class="mb-4" src="imgs/title.png" alt="" />
+          <h2>We Make This</h2>
+          <p class="text-uppercase text-black-50">PREPARE TO BE AMAZED</p>
+        </div>
+        <!-- Tabs -->
+        <ul class="list-unstyled d-flex justify-content-center mb-5 mt-5">
+          <li class="active rounded-pill">All</li>
+          <li>Design</li>
+          <li>Code</li>
+          <li>Photo</li>
+          <li>App</li>
+        </ul>
+        <!-- Project images -->
+        <div class="row gy-3">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="project-img bg-white" project-data="See our work">
+              <img class="img-fluid" src="imgs/work-01.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="project-img bg-white" project-data="See our work">
+              <img class="img-fluid" src="imgs/work-02.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="project-img bg-white" project-data="See our work">
+              <img class="img-fluid" src="imgs/work-03.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="project-img bg-white" project-data="See our work">
+              <img class="img-fluid" src="imgs/work-04.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="project-img bg-white" project-data="See our work">
+              <img class="img-fluid" src="imgs/work-05.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="project-img bg-white" project-data="See our work">
+              <img class="img-fluid" src="imgs/work-06.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="project-img bg-white" project-data="See our work">
+              <img class="img-fluid" src="imgs/work-07.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="project-img bg-white" project-data="See our work">
+              <img class="img-fluid" src="imgs/work-08.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- I want more button -->
+        <a class="btn main-button rounded-pill text-uppercase mt-5" href=""
+          >I want more</a
+        >
+      </div>
+    </div>
+    <!-- Stuff -->
+    <div class="stuff pt-5">
+      <div class="container">
+        <!-- Stuff title -->
+        <div class="main-title text-center mt-5 mb-5 position-relative">
+          <img class="mb-4" src="imgs/title.png" alt="" />
+          <h2>Some Stuff About Us</h2>
+          <p class="text-uppercase text-black-50">THE GREAT TEAM</p>
+        </div>
+        <!-- Stuff description -->
+        <p class="description text-center text-black-50 m-auto">
+          Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit,
+          eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta
+          dapibus. Proin eget tortor risus. Donec sollicitudin molestie
+          malesuada.
+        </p>
+        <!-- Stuff items -->
+        <div class="row mt-5 align-items-center">
+          <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+            <h4>Retina Design</h4>
+            <p class="text-black-50">
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+              dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            </p>
+            <p class="text-black-50">
+              Donec rutrum congue leo eget malesuada. Mauris blandit aliquet
+              elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id
+              orci porta dapibus. Proin eget tortor risus. Donec sollicitudin
+              molestie malesuada.
+            </p>
+            <a class="btn main-button rounded-pill text-uppercase" href=""
+              >Order Me One</a
+            >
+          </div>
+          <div class="col-lg-8">
+            <div class="stuff-img">
+              <img class="img-fluid" src="imgs/laptop.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team -->
+    <div class="team text-center pt-5 pb-5">
+      <div class="container pb-5 pt-5">
+        <div class="mb-5">
+          <h2 class="team-title">Meet The Team</h2>
+          <p class="text-black-50">
+            Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit,
+            eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta
+            dapibus. Proin eget tortor risus. Donec sollicitudin molestie
+            malesuada.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="team-card bg-white">
+              <img class="img-fluid" src="imgs/team-1.png" alt="" />
+              <div class="team-card-title">
+                <h4 class="text-white p-3">Luke Skywalker</h4>
+              </div>
+              <p class="text-black-50 p-3">
+                “I don't understand how we got by those troops. I thought we
+                were dead.“
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="team-card bg-white">
+              <img class="img-fluid" src="imgs/team-2.png" alt="" />
+              <div class="team-card-title">
+                <h4 class="text-white p-3">Luke Skywalker</h4>
+              </div>
+              <p class="text-black-50 p-3">
+                “I don't understand how we got by those troops. I thought we
+                were dead.“
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="team-card bg-white">
+              <img class="img-fluid" src="imgs/team-3.png" alt="" />
+              <div class="team-card-title">
+                <h4 class="text-white p-3">Luke Skywalker</h4>
+              </div>
+              <p class="text-black-50 p-3">
+                “I don't understand how we got by those troops. I thought we
+                were dead.“
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="team-card bg-white">
+              <img class="img-fluid" src="imgs/team-4.png" alt="" />
+              <div class="team-card-title">
+                <h4 class="text-white p-3">Luke Skywalker</h4>
+              </div>
+              <p class="text-black-50 p-3">
+                “I don't understand how we got by those troops. I thought we
+                were dead.“
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Partenrs -->
+    <div class="partners bg-white text-center pt-5 pb-5">
+      <div class="container mt-3 mb-3">
+        <div class="row align-items-center gy-5">
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="img-box">
+              <img class="img-fluid" src="imgs/tech-1.png" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="img-box">
+              <img class="img-fluid" src="imgs/tech-2.png" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="img-box">
+              <img class="img-fluid" src="imgs/tech-3.png" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="img-box">
+              <img class="img-fluid" src="imgs/tech-4.png" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="img-box">
+              <img class="img-fluid" src="imgs/tech-5.png" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="img-box">
+              <img class="img-fluid" src="imgs/tech-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Project -->
+    <div class="start-project text-center pt-5 pb-5">
+      <div class="container">
+        <h2 class="text-light">Start Your Project Now</h2>
+        <p class="text-white-50 mb-5">
+          Leave your description and we start the engine.Don't worry,you can
+          cancel anytime
+        </p>
+        <a class="btn main-button rounded-pill text-uppercase mb-5" href=""
+          >start project
+        </a>
+      </div>
+    </div>
+    <!-- Blog -->
+    <div class="blog text-center pt-5 pb-5">
+      <div class="container pb-5">
+        <!-- Main Title -->
+        <div class="main-title mt-5 mb-5 position-relative text-center">
+          <img class="mb-2" src="imgs/title.png" alt="" />
+          <h2>Read Our Blog</h2>
+          <p class="text-uppercase text-black-50">NEW STORIES</p>
+        </div>
+        <!-- Blogs cards -->
+        <div class="row gy-4 mb-5 text-start">
+          <div class="col-md-6 col-lg-4">
+            <div class="blod-card bg-white pb-3">
+              <img class="img-fluid" src="imgs/blog-1.jpg" alt="" />
+              <p class="text-black-50 pt-3 ps-3 mb-0">Jan 17, 2022</p>
+              <h5 class="ps-3">Some Awesome Blog Title Here</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blod-card bg-white pb-3">
+              <img class="img-fluid" src="imgs/blog-2.jpg" alt="" />
+              <p class="text-black-50 pt-3 ps-3 mb-0">Jan 17, 2022</p>
+              <h5 class="ps-3">Some Awesome Blog Title Here</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="blod-card bg-white pb-3">
+              <img class="img-fluid" src="imgs/blog-3.jpg" alt="" />
+              <p class="text-black-50 pt-3 ps-3 mb-0">Jan 17, 2022</p>
+              <h5 class="ps-3">Some Awesome Blog Title Here</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Blog button -->
+        <a class="btn main-button rounded-pill text-uppercase" href=""
+          >More Stories
+        </a>
+      </div>
+    </div>
+    <!-- Subscribtion -->
+    <div class="subscribtion pt-5 pb-5">
+      <div class="container">
+        <form class="row align-items-center">
+          <div class="col-md-5 col-lg-3">
+            <h5 class="fw-bold text-center text-lg-start pe-0">
+              Subscribe to our Newsletter:
+            </h5>
+          </div>
+          <div class="col-md-7 col-lg-7 pb-md-3">
+            <input
+              class="email bg-transparent w-100 text-light mt-sm-2 mt-lg-0 p-2"
+              type="email"
+              placeholder="Enter Email Address"
+            />
+          </div>
+          <div class="col-lg-2 text-center text-lg-start mt-3 mt-lg-0">
+            <input class="btn rounded-pill" type="submit" value="Subscribe" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer pt-5 pb-5 text-light text-center text-md-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-4">
+            <div class="footer_logo_col mb-sm-3 mb-lg-0">
+              <img class="img-fluid mb-4" src="imgs/logo.png" alt="" />
+              <p class="text-white-50 mb-5">
+                Pellentesque in ipsum id orci porta dapibus. Vivamus magna
+                justo, lacinia eget consectetur sed, convallis at tellus.
+              </p>
+              <p class="text-white-50 mb-0">
+                Created By <span class="createor"> Graphberry </span>
+              </p>
+              <p class="text-white-50 mt-0">
+                © 2022 -
+                <span class="copyright"> Bondi Inc</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-sm-3 mb-lg-0">
+            <h5>Links</h5>
+            <ul class="list-unstyled text-light lh-lg">
+              <li class="text-white-50">Home</li>
+              <li class="text-white-50">Our Services</li>
+              <li class="text-white-50">Portfolio</li>
+              <li class="text-white-50">Testimonials</li>
+              <li class="text-white-50">Support</li>
+              <li class="text-white-50">Terms and Condition</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-2 mb-sm-3 mb-lg-0">
+            <h5>About Us</h5>
+            <ul class="list-unstyled text-light lh-lg">
+              <li class="text-white-50">Sign in</li>
+              <li class="text-white-50">Register</li>
+              <li class="text-white-50">About us</li>
+              <li class="text-white-50">Blog</li>
+              <li class="text-white-50">Contact us</li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <div class="footer_contact-col">
+              <h5>Contact Us</h5>
+              <p class="text-white-50 mb-5 mt-3 lh-lg">
+                Get in touch with us via mail phone.We are waiting for your call
+                or message
+              </p>
+              <a class="btn main-button rounded-pill w-100" href=""
+                >graphberry@gmail.com</a
+              >
+            </div>
+            <ul class="d-flex mt-5 list-unstyled gap-3">
+              <li>
+                <a class="d-block text-light" href="#"
+                  ><i
+                    class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a class="d-block text-light" href="#"
+                  ><i
+                    class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a class="d-block text-light" href="#"
+                  ><i
+                    class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a class="d-block text-light" href="#"
+                  ><i
+                    class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

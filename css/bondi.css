@@ -1,0 +1,251 @@
+:root {
+  --main-color: #19283f;
+  --active-color: #33d1cc;
+  --main-button-color: #ff3150;
+  --main-button-text-color: #ffc400;
+  --section-color: #eef7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Main Button */
+
+.main-button {
+  background-color: var(--main-button-color);
+  color: var(--main-button-text-color);
+  padding: 0.5rem 1rem;
+}
+
+.main-button:hover {
+  background-color: var(--main-button-color);
+  color: var(--main-button-text-color);
+  padding: 0.5rem 1rem;
+}
+
+/* Main Button END */
+
+/* Nav bar start */
+
+.navbar {
+  background-color: var(--main-color);
+}
+
+.navbar .navbar-toggler {
+  border-color: white;
+  color: white;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--active-color);
+}
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--active-color);
+}
+
+.navbar .search {
+  color: var(--active-color);
+  position: relative;
+}
+
+.navbar .search::before {
+  content: "";
+  background-color: var(--active-color);
+  position: absolute;
+  height: 25px;
+  width: 1px;
+  top: 0;
+  left: 0px;
+}
+
+.navbar .search {
+  color: var(--active-color);
+}
+/* Nav bar End */
+
+/* Landing start */
+
+.landing {
+  background-color: var(--main-color);
+  height: calc(100vh - 72px);
+}
+/* Landing End */
+
+/* Features START */
+
+.main-title::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  background-color: var(--active-color);
+  transform: translateX(-50%);
+}
+
+.features .features-icons {
+  height: 200px;
+}
+
+.features .features-icons svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .features-icons .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+
+.features .features-icons .icon {
+  color: var(--active-color);
+}
+
+.feature-card h4 {
+  color: var(--main-button-text-color);
+}
+/* Features END */
+
+/* Projects start */
+.projects {
+  background-color: var(--section-color);
+}
+
+.projects ul li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.projects ul li.active {
+  background-color: var(--main-button-color);
+  color: var(--main-button-text-color);
+}
+.projects ul li:not(.active):hover {
+  color: var(--main-button-color);
+}
+
+.project-img {
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+}
+
+.projects .row {
+  margin-bottom: 15px;
+}
+
+.project-img::before {
+  content: attr(project-data);
+  position: absolute;
+  background-color: #33d1cc7a;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+
+.project-img:hover::before {
+  transform: translateX(0);
+}
+/* Projects End */
+
+/* Stuff start */
+.stuff .description {
+  max-width: 500px;
+}
+/* Stuff End */
+
+/* Team Start */
+.team {
+  background-color: var(--section-color);
+}
+
+.team .team-title {
+  color: var(--main-button-text-color);
+}
+.team .team-card-title {
+  background-color: var(--active-color);
+}
+/* Team End */
+
+/* Start Project Start */
+
+.start-project {
+  background-color: var(--main-color);
+}
+/* Start Project End */
+
+/* Blog Start */
+.blog .blod-card {
+  border: 1px solid #ddd;
+}
+/* Blog End */
+
+/* Subscribe Start */
+.subscribtion {
+  background-color: var(--main-button-text-color);
+}
+
+.subscribtion h5 {
+  color: var(--main-color);
+}
+
+.subscribtion input[type="email"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.subscribtion input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribtion ::placeholder {
+  color: white;
+}
+
+.subscribtion input[type="submit"] {
+  background-color: var(--main-color);
+  color: var(--main-button-text-color);
+}
+
+/* Subscribe end */
+
+/* Footer  start */
+.footer {
+  background-color: var(--main-color);
+}
+
+.footer_logo_col .createor {
+  color: var(--active-color);
+}
+.footer_logo_col .copyright {
+  color: var(--main-button-text-color);
+}
+
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
+/* Footer  End */
